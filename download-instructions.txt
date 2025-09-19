@@ -1,0 +1,34 @@
+KITCHEN RECIPE CALCULATOR - DOWNLOAD PACKAGE
+=====================================================
+
+This package contains all the files needed to run your Kitchen Recipe Calculator application.
+
+WHAT'S INCLUDED:
+- Complete source code
+- Built production files (dist/ folder)
+- Custom Node.js server
+- Setup and deployment guides
+- All recipe data and images
+
+QUICK START:
+1. Extract all files to a folder
+2. Open terminal/command prompt in that folder
+3. Run: npm install
+4. Run: npm run dev
+5. Open browser to the URL shown
+
+DEMO ACCOUNTS:
+- Manager: username "manager", password "manager123"
+- Staff: username "staff", password "staff123"
+
+IMPORTANT FILES:
+- README.md - Full documentation
+- SETUP.md - Step-by-step setup guide  
+- DEPLOYMENT.md - How to deploy online
+- package.json - Dependencies and scripts
+- server.cjs - Custom server for production
+
+The app works completely offline and stores data in your browser.
+Use the Import/Export feature to backup your recipes and settings.
+
+For any issues, check the troubleshooting section in SETUP.md
