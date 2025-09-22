@@ -36,8 +36,11 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, loading }) => {
   const handleDemoLogin = (role: 'manager' | 'kitchen-staff') => {
     if (role === 'manager') {
       setCredentials({ username: 'manager', password: 'manager123' });
-    } else {
+    } else if(role === 'staff') {
       setCredentials({ username: 'staff', password: 'staff123' });
+    }
+    else{
+       setCredentials({ username: 'shyju', password: 'shyju123' });
     }
   };
 

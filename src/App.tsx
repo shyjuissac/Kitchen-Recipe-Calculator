@@ -15,7 +15,7 @@ import { useAuth } from './hooks/useAuth';
 import { ChefHat, Calculator } from 'lucide-react';
 
 function App() {
-  const { isAuthenticated, user, loading, login, logout, isManager, isKitchenStaff } = useAuth();
+  const { isAuthenticated, user, loading, login, logout, isManager, isKitchenStaff, isShyju } = useAuth();
   const [recipes, setRecipes] = useLocalStorage<CookieRecipe[]>('cookie-recipes', defaultRecipes);
   const [categories, setCategories] = useLocalStorage<Category[]>('recipe-categories', defaultCategories);
   const [brandSettings, setBrandSettings] = useLocalStorage('brand-settings', defaultBrandSettings);
