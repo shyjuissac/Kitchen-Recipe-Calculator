@@ -12,6 +12,7 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
   }
   
   /* Prevent zoom on input focus for iOS */
@@ -54,4 +55,9 @@
   .safe-area-right {
     padding-right: env(safe-area-inset-right);
   }
+}
+.to-purple-50{
+  background-image: url(https://thepantrycateringbeta.co.uk/wp-content/uploads/2025/09/bg2.jpg);
+  background-size: cover;
+  
 }
