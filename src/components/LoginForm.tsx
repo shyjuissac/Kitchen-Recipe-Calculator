@@ -110,45 +110,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, loading }) => {
           </button>
         </form>
 
-        {/* Demo Accounts */}
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-gray-600">Demo Accounts:</span>
-            <button
-              type="button"
-              onClick={() => setShowDemo(!showDemo)}
-              className="text-sm text-blue-600 hover:text-blue-700"
-            >
-              {showDemo ? 'Hide' : 'Show'}
-            </button>
-          </div>
-          
-          {showDemo && (
-            <div className="space-y-2">
-              <button
-                type="button"
-                onClick={() => handleDemoLogin('manager')}
-                className="w-full text-left p-3 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors"
-                disabled={loading}
-              >
-                <div className="font-medium text-green-800">Manager Account</div>
-                <div className="text-sm text-green-600">Full access to all features</div>
-                <div className="text-xs text-green-500 mt-1">Username: manager | Password: manager123</div>
-              </button>
-              
-              <button
-                type="button"
-                onClick={() => handleDemoLogin('kitchen-staff')}
-                className="w-full text-left p-3 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
-                disabled={loading}
-              >
-                <div className="font-medium text-blue-800">Kitchen Staff Account</div>
-                <div className="text-sm text-blue-600">View recipes and calculate quantities</div>
-                <div className="text-xs text-blue-500 mt-1">Username: staff | Password: staff123</div>
-              </button>
-            </div>
-          )}
-        </div>
+         
       </div>
     </div>
   );
