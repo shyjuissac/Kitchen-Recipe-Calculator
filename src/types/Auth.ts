@@ -1,7 +1,7 @@
 export interface User {
   id: string;
   username: string;
-  role: 'manager' | 'kitchen-staff';
+  role: 'manager' | 'kitchen-staff' | 'developer';
   name: string;
   createdAt: Date;
   lastLogin?: Date;

@@ -14,6 +14,13 @@ const DEMO_USERS = [
     role: 'kitchen-staff' as const,
     name: 'Kitchen Staff'
   }
+  ,
+  {
+    username: 'shyju',
+    password: 'shyju123',
+    role: 'developer' as const,
+    name: 'Web Developer'
+  }
 ];
 
 export function useAuth() {
@@ -114,12 +121,17 @@ export function useAuth() {
   const isKitchenStaff = () => {
     return authState.user?.role === 'kitchen-staff';
   };
+  
+  const isShyju = () => {
+    return authState.user?.role === 'developer';
+  };
 
   return {
     ...authState,
     login,
     logout,
     isManager,
-    isKitchenStaff
+    isKitchenStaff,
+    isShyju
   };
 }
