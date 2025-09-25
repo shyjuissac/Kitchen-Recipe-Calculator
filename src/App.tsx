@@ -13,12 +13,7 @@ import LoginForm from './components/LoginForm';
 import UserMenu from './components/UserMenu';
 import { useAuth } from './hooks/useAuth';
 import { ChefHat, Calculator } from 'lucide-react';
-import Orders from "./components/Orders";
-import Revenue from "./components/Revenue";
 
- 
- 
- 
 
 function App() {
   const { isAuthenticated, user, loading, login, logout, isManager, isKitchenStaff, isShyju } = useAuth();
@@ -166,15 +161,6 @@ function App() {
   }
 
   return (
-    
-    <div>
-      <h1>WooCommerce Dashboard</h1>
-      <Revenue />
-      <Orders />
-    </div>
-    
-    
-    
     <div
       className="min-h-screen"
       style={{ 
